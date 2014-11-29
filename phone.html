@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Phone</title>
+    <script type="text/javascript" src="roll.js"></script>
+    <style>
+        * {
+            color: white;
+            font-family: NanumGothic;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: rgba(255,255,255,0.3);
+        }
+        section {
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        ul {
+            list-style: none;
+            line-height: 28px;
+        }
+        ul a {
+            display: block;
+        }
+        ul a:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+        ul a:active {
+            background-color: rgba(255,255,255,0.3);
+        }
+        .cat_phone {
+            width: 120px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .roll {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+            -webkit-perspective: 400px;
+            -moz-perspective: 400px;
+            -webkit-perspective-origin: 50% 50%;
+            -moz-perspective-origin: 50% 50%;
+        }
+
+            .roll span {
+                display: block;
+                position: relative;
+                padding: 0 2px;
+                -webkit-transition: all 400ms ease;
+                -moz-transition: all 400ms ease;
+                -webkit-transform-origin: 50% 0%;
+                -moz-transform-origin: 50% 0%;
+                -webkit-transform-style: preserve-3d;
+                -moz-transform-style: preserve-3d;
+            }
+
+            .roll:hover span {
+                -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+                -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+            }
+
+            .roll span:after {
+                content: attr(data-title);
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 0 2px;
+                color: #fff;
+                -webkit-transform-origin: 50% 0%;
+                -moz-transform-origin: 50% 0%;
+                -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+                -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+            }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+    <script src="shuffleText.js"></script>
+    <script src="shuffleScript.js"></script>
+</head>
+<body>
+    <header>
+        <img class="title" src="image/phone.png" />
+    </header>
+    <hr />
+    <section>
+        <div class="cat_phone">
+            <ul>
+                <li><a class="roll" target="imoniter" href="phone_kor.html"><span id="p1" data-title="국내출시">국내출시</span></a></li>
+                <li><a class="roll" target="imoniter" href="phone_int.html"><span id="p2" data-title="국외출시">국외출시</span></a></li>
+                <li><a class="roll" target="imoniter" href="note.html"><span id="p3" data-title="노트">노트</span></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

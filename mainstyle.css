@@ -1,0 +1,217 @@
+﻿* {
+    color: white;
+    font-family: NanumGothic;
+    text-decoration: none;
+}   
+
+*:hover{
+    color: lightgray;
+}
+
+body {
+    background-image: url("image/wall.png");
+}
+
+header {
+    font-size: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.powerd {
+    float:right;
+}
+
+.bgm {
+    font-size: 9px;
+}
+
+iframe {
+    align-content: center;
+    width: 84%;
+}
+
+aside#left {
+    background-color: rgba(0,0,0,0.4);
+    float: left;
+    width: 15%;
+    height: 604px;
+}
+
+#left h4 {
+    padding: 0 10px;
+    font-size: 20px
+}
+
+#left ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+#left ul li {
+    line-height: 28px;
+    border-bottom: 1px solid;
+}
+
+#left ul li a {
+    display: block;
+}
+
+#left ul li a:hover {
+    background-color: rgba(0,0,0,0.20);
+}
+
+#left ul li a:active {
+    background-color: rgba(0,0,0,0.20);
+}
+
+.cat {
+    margin: 10px;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav ul{
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 0 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.roll {
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+
+    -webkit-perspective: 400px;
+       -moz-perspective: 400px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+}
+
+.roll span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+
+    -webkit-transition: all 400ms ease;
+       -moz-transition: all 400ms ease;
+    
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+}
+
+.roll:hover span {
+        background-color: rgba(0,0,0,0.20);
+
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+}
+
+.roll span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+
+    color: #fff;
+    background-color: rgba(0,0,0,0.20);
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
+
+.roll2 {
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+
+    -webkit-perspective: 400px;
+       -moz-perspective: 400px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+}
+
+.roll2 span {
+    display: block;
+    position: relative;
+    padding: 0 2px;
+
+    -webkit-transition: all 400ms ease;
+       -moz-transition: all 400ms ease;
+    
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+    
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+}
+
+.roll2:hover span {
+
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+}
+
+.roll2 span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+
+    color: #fff;
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
+
+.roll2:hover span {
+
+        -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+           -moz-transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+}
+
+.roll2 span:after {
+    content: attr(data-title);
+
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 2px;
+
+    color: #fff;
+
+    -webkit-transform-origin: 50% 0%;
+       -moz-transform-origin: 50% 0%;
+
+    -webkit-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+       -moz-transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+}
